@@ -1,0 +1,19 @@
+.pie {
+    background-image: url(../images/apple-pie.jpg);
+    background-size: cover;
+    text-align: center;
+    height: 900px;
+    color: white;
+}
+
+.explanation {
+    text-align: center;
+}
+
+.recipe {
+    align-items: center;
+}
+
+.cooking {
+    align-items: center;
+}
