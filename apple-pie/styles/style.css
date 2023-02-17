@@ -1,19 +1,85 @@
-.pie {
-    background-image: url(../images/apple-pie.jpg);
-    background-size: cover;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    font-family: Roboto;
+    font-size: 70px;
     text-align: center;
-    height: 900px;
+    font-weight: lighter;
     color: white;
 }
 
+.apple {
+    background-image: url(../images/apple-pie.jpg);
+    position: 0 0;
+    background-size: cover;
+    height: 500px;
+    padding-top: 350px;
+}
+
+
 .explanation {
-    text-align: center;
+    
+    padding: 100px 200px 20px 200px;
+    font-family: Roboto;
+    font-size: 28px;
 }
 
 .recipe {
-    align-items: center;
+    width: 100px;
+    padding-left: 350px;
+}
+
+#aline {
+    border: 1px solid black;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.ingredients {
+    font-family: Roboto;
+    padding: 50px 200px 20px 200px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+#pastry {
+    list-style-type: '- ';
+    font-size: 20px;
 }
 
 .cooking {
-    align-items: center;
+    width: 100px;
+    padding-left: 380px;
+}
+
+.directions {
+    font-family: Roboto;
+    padding: 50px 200px 20px 200px;
+}
+
+#oven {
+    font-size: 20px;
+    line-height: 35px;
+}
+
+ol {
+    counter-reset: list;
+}
+
+ol > li {
+    list-style: none;
+}
+
+ol > li:before {
+    content: counter(list) ") ";
+    counter-increment: list;
 }
